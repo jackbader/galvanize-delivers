@@ -1,0 +1,52 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.no-pad-bot {
+  /*height: 400px;*/
+  background-image: url("http://bamason-galvanize-delivers.surge.sh/img/hero.jpg");
+}
+
+.banner-container {
+  padding-bottom: 75px;
+}
+
+@media (max-width: 600px) {
+  #logo-container {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  #logo-container {
+    font-size: 1rem;
+  }
+}
+
+
+.burger {
+  background-image: url(http://bamason-galvanize-delivers.surge.sh/img/burger.jpg);
+}
+
+.argula {
+  background-image: url(http://bamason-galvanize-delivers.surge.sh/img/pizza.jpg);
+}
+
+.ribs {
+  background-image: url(http://bamason-galvanize-delivers.surge.sh/img/ribs.jpg);
+}
+
+.icecream {
+  background-image: url(http://bamason-galvanize-delivers.surge.sh/img/ice_cream.jpg);
+}

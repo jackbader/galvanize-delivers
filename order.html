@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+
+      <div class="">
+        <a id="logo-container" href="#" class="brand-logo">Galvanize Delivers</a>
+      </div>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Order Delivery</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Order Delivery</a></li>
+      </ul>
+
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m4">
+
+        <p style="font-size: 2em; margin: 0px; margin-top: 10px;">Menu</p>
+
+        <div class="row">
+          <div class="col s12 m12">
+            <div class="card">
+              <div class="card-image">
+                <img src="http://bamason-galvanize-delivers.surge.sh/img/burger.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title">Royale with Cheese</span>
+                <p class="price">$8.99</p>
+              </div>
+              <div class="card-action">
+                <a href="#" >Add to order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 m12">
+            <div class="card">
+              <div class="card-image">
+                <img src="http://bamason-galvanize-delivers.surge.sh/img/ribs.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title title">Smoked Swine</span>
+                <p class="price">$14.99</p>
+              </div>
+              <div class="card-action">
+                <a href="#" >Add to order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col s12 m4">
+
+        <p style="color: white; font-size: 2em; margin: 0px; margin-top: 10px;">Menu</p>
+
+        <div class="row">
+          <div class="col s12 m12">
+            <div class="card">
+              <div class="card-image">
+                <img src="http://bamason-galvanize-delivers.surge.sh/img/pizza.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title title">Arugula Pie</span>
+                <p class="price">$11.99</p>
+              </div>
+              <div class="card-action">
+                <a href="#" >Add to order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 m12">
+            <div class="card">
+              <div class="card-image">
+                <img src="http://bamason-galvanize-delivers.surge.sh/img/ice_cream.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title title">Icecream Biscuit</span>
+                <p class="price">$7.99</p>
+              </div>
+              <div class="card-action">
+                <a href="#" >Add to order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col s12 m4">
+
+        <p style="font-size: 2em; margin: 0px; margin-top: 10px;">Order</p>
+
+        <table class="striped" id="orders">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th class="right">Price</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Eclair</td>
+              <td>1</td>
+              <td class="right">$0.87</td>
+            </tr>
+            <tr>
+              <td>Jellybean</td>
+              <td>1</td>
+              <td class="right">$3.76</td>
+            </tr>
+            <tr>
+              <td>Lollipop</td>
+              <td>1</td>
+              <td class="right">$7.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <tbody>
+            <tr>
+              <td class="right-align" style="padding-left: 50px;">Subtotal</td>
+              <td class="right" id="subtotal">$0.00</td>
+            </tr>
+            <tr>
+              <td class="right-align" style="padding-left: 50px;">Tax</td>
+              <td class="right" id="tax">$0.00</td>
+            </tr>
+            <tr>
+              <td class="right-align" style="padding-left: 50px;">Total</td>
+              <td class="right" id="total">$0.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+          <!-- <form action="http://foo.com" method="get">
+            <div>
+              <label for="say">What greeting do you want to say?</label>
+              <input name="say" id="say" value="Hi">
+            </div>
+            <div>
+              <label for="to">Who do you want to say it to?</label>
+              <input name="to" value="Mom">
+            </div>
+            <div>
+              <button>Send my greetings</button>
+            </div>
+          </form> -->
+
+        <form action="order.html" class="formValidate" method="GET">
+          <div class="input-field">
+            <i class="material-icons prefix pink-text accent-2 active">account_circle</i>
+            <input name="name" class="validate" id="name" type="text" required="" placeholder="REQUIRED">
+            <label for="name" class="active">Name</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix pink-text accent-2 active">phone</i>
+            <input name="phone" id="phone" type="tel" class="validate" placeholder="REQUIRED" required="">
+            <label for="phone" class="active">Phone</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix pink-text accent-2 active">business</i>
+            <input name="address" id="address" type="text" class="validate" placeholder="REQUIRED" required="">
+            <label for="address" class="active">Address</label>
+          </div>
+          <div class="col s12">
+              <button type="submit" class="btn waves-effect waves-light submit-button">Submit</button>
+          </div>
+        </form>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>Subtotal: <span id="modal-subtotal"></span></p>
+            <p>Tax: <span id="modal-tax"></span></p>
+            <p>Total: <span id="modal-total"></span></p>
+            <p>Name: <span id="modal-name"></span></p>
+            <p>Phone: <span id="modal-phone"></span></p>
+            <p>Address: <span id="modal-address"></span></p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                <label for="icon_prefix2">First Name</label>
+              </div>
+            </div>
+          </form>
+        </div> -->
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Galvanize Delivers</h5>
+          <p class="grey-text text-lighten-4">Fine Dining, Delivered.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <ul>
+            <li><a class="white-text" href="#!"></a></li>
+            <li><a class="white-text" href="#!"></a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <ul>
+            <li><a class="white-text" href="index.html">Home</a></li>
+            <li><a class="white-text" href="order.html">Order Delivery</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; 2017 Galvanize Delivers
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/order.js"></script>
+
+  </script>
+
+</body>
+
+</html>
